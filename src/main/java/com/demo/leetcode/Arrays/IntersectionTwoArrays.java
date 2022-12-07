@@ -9,14 +9,29 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-@Service
+//@Service
 public class IntersectionTwoArrays {
 
-    @PostConstruct
+    // @PostConstruct
     public void run(){
-        int[] num1 = new int[]{4,9,5};
+        int[] num1 = new int[]{9};
         int[] num2 = new int[]{9,4,9,8,4};
-        System.out.println(intersect(num1, num2));
+        //System.out.println(intersect(num1, num2));
+        System.out.println(plusOne(num1));
+    }
+
+    public static int[] plusOne(int[] digits) {
+        for (int i = digits.length - 1; i >= 0; i--) {
+            if (digits[i] < 9) {
+                digits[i]++;
+                return digits;
+            }
+            digits[i] = 0;
+        }
+
+        digits = new int[digits.length + 1];
+        digits[0] = 1;
+        return digits;
     }
 
     public int[] intersect(int[] nums1, int[] nums2) {
