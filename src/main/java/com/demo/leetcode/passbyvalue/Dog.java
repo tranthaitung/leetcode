@@ -1,0 +1,18 @@
+package com.demo.leetcode.passbyvalue;
+
+public class Dog {
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    private String name;
+
+    Dog(String name) {
+        this.name = name;
+    }
+
+}
