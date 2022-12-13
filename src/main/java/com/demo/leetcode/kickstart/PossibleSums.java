@@ -6,7 +6,7 @@ import java.util.*;
 
 public class PossibleSums {
     public static final String INPUT_FILES_PATH = "src/main/resources/kickstart/";
-    
+
     public static void main(String[] args) throws Exception {
         String name = "possibleSums";
 
