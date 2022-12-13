@@ -36,11 +36,12 @@ public class PossibleSums {
 
             //cal
             Set<Integer> table = new HashSet<>();
-            table.add(0); // init for sums
+            table.add(coins[0]);
 
+            Set<Integer> sums = new HashSet<>();
             for (int i = 0; i < coins.length; i++) {
-                List<Integer> sums = new ArrayList<>(table);
-                for (Integer sum : sums) {
+                sums.addAll(table);
+                for (int sum : sums) {
                     for (int quantity = 1; quantity <= quantityArray[i]; quantity++) {
                         table.add(sum + quantity * coins[i]);
                     }
