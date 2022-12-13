@@ -5,10 +5,10 @@ import java.io.PrintWriter;
 import java.util.Scanner;
 
 public class Walktober {
-    public static final String INPUT_FILES_PATH = "/Users/tungtran/Documents/GitHub/leetcode/src/main/java/com/demo/leetcode/kickstart/";
+    public static final String INPUT_FILES_PATH = "src/main/resources/kickstart/";
 
     public static void main(String[] args) throws Exception {
-        String name = "input1";
+        String name = "walktober";
 
         Scanner sc = new Scanner(new File(INPUT_FILES_PATH + name + ".in"));
         PrintWriter pw = new PrintWriter(INPUT_FILES_PATH + name + ".out");
