@@ -9,18 +9,37 @@ import java.util.LinkedList;
 public class Collection {
     public static void main(String[] args)
     {
-        ArrayList<Integer> arrayList = new ArrayList<>();
-        arrayList.add(1);
-        arrayList.get(1);
-        arrayList.remove(1);
+        int x =20;
+        int y =0;
+        switch(x)
+        {
+            case 10:
+                y++;
+            case 20:
+                y=y+2;
+            case 30:
+                y= y+3;
+        }
+        System.out.println(y);
+    }
 
-        LinkedList<Integer> linkedList = new LinkedList<>();
-        linkedList.add(1);
-        linkedList.get(1);
-        linkedList.remove(1);
-
-        HashMap<String, String> hm = new HashMap<>();
-        hm.put("1", "One");
-
+    public static void change(Person person){
+        person.setName("changed");
     }
 }
+
+class Person {
+    private String name;
+    public Person(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+}
+
