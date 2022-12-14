@@ -17,10 +17,10 @@ public class Practice2 {
         String[] words = message.split(" ");
         List<String> notification = new ArrayList<>();
 
-        for (int i = 0; i < words.length; i++) {
-            K = K - words[i].length();
+        for (String word : words) {
+            K = K - word.length();
             if (K > dot.length()) {
-                notification.add(words[i]);
+                notification.add(word);
                 K--;
             } else {
                 break;
